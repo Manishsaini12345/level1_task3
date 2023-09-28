@@ -6,30 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tempratue Convertar</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
     <div class="con">
-    <h1>Tempratue Converter</h1>
-    <div class="container">
-        <div class="left">
-            <ul>Degree</ul>
-            <input type="number" name="" id="degree" value="0">
-        </div>
-        <!-- <h1>Type</h1> -->
-        <!-- <label for="temp"></label> -->
-        <div class="right">
-            <select name="temp" id="temp">
-                <option value="kelvin"> Kelvin</option>
-                <option value="fahrenheit">Fahrenheit</option>
-                <option value="degree">Degree</option>
-            </select>
-            <!-- <h3>Result</h3> -->
-            <input type="number" name="" id="result" value="273">
+        <h1>Tempratue Converter</h1>
+        <div class="container">
+            <div class="left">
+                <ul>Degree</ul>
+                <input type="number" name="" id="degree" value="0">
+            </div>
+            <!-- <h1>Type</h1> -->
+            <!-- <label for="temp"></label> -->
+            <div class="right">
+                <select name="temp" id="temp">
+                    <option value="kelvin"> Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="degree">Degree</option>
+                </select>
+                <!-- <h3>Result</h3> -->
+                <input type="number" name="" id="result" value="273">
+            </div>
         </div>
     </div>
-</div>
     <script>
         let temp = document.getElementById("temp");
         let deg = document.getElementById("degree");
@@ -38,8 +37,8 @@
         deg.addEventListener('input', function () {
             let deg = this.value;
             if (temp.value == "kelvin") {
-                let kel = deg * 1 + 273 ;
-                res.value = kel ;
+                let kel = deg * 1 + 273;
+                res.value = kel;
 
             }
             else if (temp.value == "fahrenheit") {
